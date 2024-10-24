@@ -1,0 +1,439 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ img {
+   max-width: 100%;
+ }
+ /* a {
+   text-decoration: underline;
+   
+  } */
+  /* .maincontainer {
+   
+    margin: 0 auto;
+    border-left: 4px solid whitesmoke;
+    border-right: 4px solid whitesmoke;
+   
+   
+  } */
+  .top {
+   position: sticky;
+   top: 0;
+   z-index: 99;
+  }
+ 
+  .header
+  {
+    display: flex;
+   
+   
+    background-color: #0088cc;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+    
+  }
+  .logo  {
+ 
+   margin-left: 2%;
+  
+  }
+ .title {
+   
+   color: white;
+   /* opacity: 0.8; */
+    padding-top: 2%;
+    margin-left: -9%;
+   
+    
+ }
+ .titleam
+ {
+    font-size: 18px;
+    
+ }
+ .titleen {
+    font-size: 13px;
+    text-align: center;
+ }
+ .search {
+   display: flex;
+   gap: 5px;
+   margin-top: 30px;
+   /* margin-left: 130px; */
+   /* margin-right: 80px; */
+  }
+  .search input {
+    margin-top: 3px;
+    height: 30px;
+    background-color:white;
+    border: 2px solid white;
+    width: 180px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    
+  }
+ .searchicon {
+    color: white;
+    cursor: pointer;
+    /* margin-top: 3px; */
+  
+ }
+ .socialmediapanel {
+   /* margin-right: 20px; */
+  
+   display: flex;
+   flex-direction: column;
+   /* justify-content: end; */
+   justify-content: center;
+   
+ }
+ .socialmediacontent {
+   display: flex;
+   /* justify-content: flex-end; */
+   gap: 20px;
+   /* background-color: white; */
+
+ 
+   
+ }
+ .icon-circle-border {
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   border: 2px solid white; /* white border */
+   border-radius: 50%; /* Makes it circular */
+   text-align: center;
+   line-height: 18px; /* Centers the icon vertically */
+ 
+}
+
+.icon-circle-border i {
+   color: #3b5998; /* Facebook blue */
+   font-size: 18px; /* Icon size */
+   
+}
+.noborder {
+   border: none;
+}
+.lan {
+
+   margin-top: 35px;
+   margin-right: 2%;
+   /* border: 2px solid green; */
+  
+  }
+ 
+  .lanlist ul {
+  
+   list-style: none;
+
+  }
+
+  .lanlist ul a {
+   padding: 10px;
+   margin-bottom: 5px;
+   color: white;
+  
+  }
+ /* menu start */
+.menucontainer {
+   height: 60px;
+  
+   
+}
+
+ .menucontainer ul{
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   gap: 70px;
+   background-color: #274c9d;
+   color: white;
+   font-size: 14px;
+   padding: 5px;
+   margin-top: 0.5px;
+ 
+   
+ }
+ .menucontainer ul a {
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+ }
+ .menucontainer ul div a {
+   
+   color: black;
+   padding-left: 50px;
+   
+ }
+ 
+
+ .dropbtn {
+   background-color:inherit;
+   color: white;
+   padding: inherit;
+   font-size: inherit;
+   border: none;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ 
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgb(64, 64, 199);
+   background-color: rgb(223, 217, 217);
+   min-width: 260px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color:white;
+  
+   padding: 9px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover { background-color: rgb(197, 195, 195);}
+ 
+ .dropdown:hover .dropdown-content {display: block;}
+ 
+ .dropdown:hover .dropbtn {background-color:inherit;}
+
+
+.menu ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.menu ul li a {
+   
+   color:white;
+  
+   text-decoration: none; 
+   
+}
+/* menu end */
+/*... panel start.... */
+
+ .panel {
+   
+   display: flex;
+   /* margin-top: 0; */
+    margin-top: -31px;
+    margin-bottom: 0px;
+}
+
+
+/* .middlepanel {
+ width: 78%;
+ margin: 0 auto;
+
+} */
+.middlepanel  {
+   text-align: justify;
+   font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16px;
+}
+.missiontext {
+   text-align: justify;
+   font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16px;
+    padding :0 20px;
+    /* color:blue; */
+    
+    
+}
+.middlefirsettitle p{
+   text-align: center;
+   padding: 20px;
+   font-family: "Moderustic", sans-serif;
+   font-optical-sizing: auto;
+   font-size: 20px;
+}
+.sectionphoto {
+   /* width: 750px; */
+   /* width: 100%; */
+   /* height: 500px; */
+ 
+   height: 550px;
+   /* border: 4px solid green; */
+   /* margin: 1%; */
+ 
+ 
+}
+
+.slider {
+   width: 96%;
+   position: relative;
+   height: 550px;
+   margin: 0 auto;
+   /* border: 4px solid green; */
+  
+}
+
+.slider ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.slider li {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+}
+
+.slider img {
+   height: 550px;
+   width: 1350px;
+   /* width: 100%; */
+   /* width: 98%; */
+ 
+   /* border-radius: 15px; */
+    /* border: 3px solid  red; */
+ 
+}
+
+.slider li.active {
+   opacity: 1;
+}
+
+.slider .caption {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   font-size: 18px;
+   padding: 10px;
+   text-align: center;
+}
+
+.btn {
+   background-color: rgb(59, 59, 170);
+   color: white;
+   padding: 5px 40px;
+}
+/* footer */
+/* .address {
+   display: flex;
+   justify-content: space-around;
+   padding-top: 10px;
+   color: blue;
+}
+.copyright {
+   text-align: center;
+  margin-bottom: 0px;
+  padding: 10px;
+ 
+}
+.footer {
+  
+   display: flex;
+ 
+}
+.copyright {
+   width: 85%;
+   margin: 0 auto;
+   border: 20x solid sienna;
+}  */
+
+/* .fa-2x {
+   cursor: pointer;
+} */
+/* middle panel general style  */
+
+  .contactusconetent,
+  .hirepurchasecontent,
+  .aboutuscontent,
+  .financialleasecontent,
+  .reportcontent,
+  .plancontent,
+  .requirementcontent,
+  .stakeholderscontent,
+  .faqcontent,
+  .traningcontent,
+  .consultancycontent,
+  .newscontent,
+  .leasefinancecontent,
+  .announcementcontent
+ {
+   margin: 40px 80px;
+  }
+  .brochuercontent {
+
+   margin-top: 40px;
+  }
+  .brochuercontent div {
+   margin-bottom: 40px;
+ 
+  }
+  .nocontent {
+   
+    text-align: center;
+    height: 300px;
+    /* color: blue; */
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: rgb(221, 212, 212); */
+
+  }
+  .each_title{
+   color: blue;
+   font-size: 18px;
+   font-weight: bold;
+  }
+  .subtitle {
+   color: blue;
+  }
+  .hirepurchasecontent ul li,
+  .financialleasecontent ul li,
+  .plancontent ul li,
+  .requirementcontent ul li,
+  .contactusconetent ul li,
+  .stakeholderscontent ul li,
+  .faqcontent ul li,
+  .traningcontent ul li{
+   margin-left: 40px;
+  }
+  /* end of middle panel general style  */
+ .headofficecontact span {
+   color: blue;
+ }
+
+/* footer sytle start */
+.address {
+   display: flex;
+   gap: 20px;
+   margin-left: 100px;
+   color: #0088cc;
+   font-weight: bold;
+}
+/* end of footer sytle  */
+
