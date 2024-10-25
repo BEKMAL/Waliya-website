@@ -207,7 +207,7 @@
  
  .dropdown-content a:hover { background-color: rgb(197, 195, 195);}
  
- .dropdown:hover .dropdown-content {display: block;}
+ /* .dropdown:hover .dropdown-content {display: block;} */
  
  .dropdown:hover .dropbtn {background-color:inherit;}
 

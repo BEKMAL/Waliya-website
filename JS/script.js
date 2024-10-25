@@ -29,6 +29,74 @@ setInterval(() => {
   slides[activeSlide].classList.add('active');
 }, 5000);
 
+// about us menu mouseover and mouseout handler// 
+let dropdownaboutus=document.querySelectorAll(".dropdownaboutus")
+let dropdowncontentaboutus=document.querySelectorAll(".dropdown-contentaboutus")
+dropdownaboutus.forEach(element => {
+  element.addEventListener('mouseover', () => {
+ 
+      dropdowncontentaboutus.forEach(element=>{
+        element.style.display="block"
+      })
+
+  });
+  element.addEventListener('mouseout', () => {
+    dropdowncontentaboutus.forEach(element=>{
+      element.style.display="none"
+    })
+ });
+
+});
+// service and products menu mouseover and mouseout handler// 
+let dropdownservice=document.querySelectorAll(".dropdownservice")
+let dropdowncontentservice=document.querySelectorAll(".dropdown-contentservice")
+dropdownservice.forEach(element => {
+  element.addEventListener('mouseover', () => {
+ 
+    dropdowncontentservice.forEach(element=>{
+        element.style.display="block"
+      })
+
+  });
+  element.addEventListener('mouseout', () => {
+    dropdowncontentservice.forEach(element=>{
+      element.style.display="none"
+    })
+ });
+
+});
+// media menu mouseover and mouseout handler// 
+let dropdownmedia=document.querySelectorAll(".dropdownmedia")
+let dropdowncontentmedia=document.querySelectorAll(".dropdown-contentmedia")
+dropdownmedia.forEach(element => {
+  element.addEventListener('mouseover', () => {
+ 
+    dropdowncontentmedia.forEach(element=>{
+        element.style.display="block"
+      })
+
+  });
+  element.addEventListener('mouseout', () => {
+    dropdowncontentmedia.forEach(element=>{
+      element.style.display="none"
+    })
+ });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //----end of image changer
 
 let aboutuscontent=document.getElementById("aboutuscontent");
@@ -111,6 +179,8 @@ announcementcontent.style.display="none"
 reqseemorecontent.style.display="none"
 contactseemorecontent.style.display="none"
 
+
+
 //end of at start up
 home.addEventListener("click",function(e){
   e.preventDefault();
@@ -158,7 +228,12 @@ aboutusmenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
-
+  dropdownaboutus.forEach(element => {
+   
+  dropdowncontentaboutus.forEach(element=>{
+    element.style.display="none"
+  })
+})
 })
 
 
@@ -184,6 +259,13 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
+  dropdownservice.forEach(element => {
+   
+    dropdowncontentservice.forEach(element=>{
+      element.style.display="none"
+    })
+  })
+ 
 })
 
  financialleasemenu.addEventListener("click",function(e){
@@ -209,6 +291,12 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
+  dropdownservice.forEach(element => {
+   
+    dropdowncontentservice.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  traningmenu.addEventListener("click",function(e){
   e.preventDefault()
@@ -232,6 +320,12 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
  
   announcementcontent.style.display="none"
+  dropdownservice.forEach(element => {
+   
+    dropdowncontentservice.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  consultancymenu.addEventListener("click",function(e){
   e.preventDefault()
@@ -255,6 +349,12 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
+  dropdownservice.forEach(element => {
+   
+    dropdowncontentservice.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  newsmenu.addEventListener("click",function(e){
   e.preventDefault()
@@ -278,6 +378,12 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
+  dropdownmedia.forEach(element => {
+   
+    dropdowncontentmedia.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  brochuermenu.addEventListener("click",function(e){
   e.preventDefault()
@@ -301,6 +407,12 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
  
   announcementcontent.style.display="none"
+  dropdownmedia.forEach(element => {
+   
+    dropdowncontentmedia.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  reportmenu.addEventListener("click",function(e){
   e.preventDefault() 
@@ -324,6 +436,12 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
+  dropdownmedia.forEach(element => {
+   
+    dropdowncontentmedia.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  planmenu.addEventListener("click",function(e){
   e.preventDefault() 
@@ -348,6 +466,12 @@ hirepurchasemenu.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
+  dropdownmedia.forEach(element => {
+   
+    dropdowncontentmedia.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  leasefinancemenu.addEventListener("click",function(e){
   e.preventDefault() 
@@ -445,6 +569,12 @@ requirementlink.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="none"
+  dropdownservice.forEach(element => {
+   
+    dropdowncontentservice.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
 
  stakeholderslink.addEventListener("click",function(e){
@@ -470,6 +600,13 @@ requirementlink.addEventListener("click",function(e){
   stakeholderscontent.style.display="block"
  
   announcementcontent.style.display="none"
+
+  dropdownaboutus.forEach(element => {
+   
+    dropdowncontentaboutus.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
 
 announcementlink.addEventListener("click",function(e){
@@ -496,6 +633,12 @@ announcementlink.addEventListener("click",function(e){
   stakeholderscontent.style.display="none"
 
   announcementcontent.style.display="block"
+  dropdownmedia.forEach(element => {
+   
+    dropdowncontentmedia.forEach(element=>{
+      element.style.display="none"
+    })
+  })
  })
  reqseemore.addEventListener("click",function(e){
   e.preventDefault()
