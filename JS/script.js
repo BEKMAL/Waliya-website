@@ -1,33 +1,56 @@
 
 //Home page image changer
-const slider = document.querySelector('.slider');
-const slides = slider.querySelectorAll('li');
-const data ={
-  content:"<b>Waliya Capital Goods Finance Business S.C</b> "
+const slideTrack = document.querySelector(".slide-track");
+const slides = document.querySelectorAll(".slide");
+const captionElement = document.getElementById("caption");
+const slideWidth = 1280; // updated width of each slide
+let index = 0;
+
+captionElement.textContent = slides[index].getAttribute("data-caption");
+function updateSlidePosition() {
+  slideTrack.style.transition = "transform 0.5s ease";
+  slideTrack.style.transform = `translateX(-${index * slideWidth}px)`;
+  
+  captionElement.textContent = slides[index].getAttribute("data-caption"); // Update caption
+
 }
-// Store the total number of images
-const slideCount = slides.length;
-let activeSlide = 0;
-// console.log(slideCount);
-// To change the images dynamically every 
-// 5 Secs, use SetInterval() method
-function photoload (){
-    slides[activeSlide].classList.remove('active');
-  activeSlide++;
-  if (activeSlide === slideCount) {
-    activeSlide = 0;
+
+function nextSlide() {
+  if (index >= slides.length / 2 - 1) {
+    index++;
+    updateSlidePosition();
+    setTimeout(() => {
+      slideTrack.style.transition = "none";
+      index = 0;
+      slideTrack.style.transform = `translateX(0px)`;
+    }, 500);
+  } else {
+    index++;
+    updateSlidePosition();
   }
-  slides[activeSlide].classList.add('active');
 }
-photoload();
-setInterval(() => {
-  slides[activeSlide].classList.remove('active');
-  activeSlide++;
-  if (activeSlide === slideCount) {
-    activeSlide = 0;
+
+function prevSlide() {
+  if (index <= 0) {
+    index--;
+    updateSlidePosition();
+    setTimeout(() => {
+      slideTrack.style.transition = "none";
+      index = slides.length / 2 - 1;
+      slideTrack.style.transform = `translateX(-${index * slideWidth}px)`;
+    }, 500);
+  } else {
+    index--;
+    updateSlidePosition();
   }
-  slides[activeSlide].classList.add('active');
-}, 5000);
+}
+
+// Automatically move to the next slide every 3 seconds
+setInterval(nextSlide, 3000);
+
+
+
+//end of homepage image xhanger
 
 // about us menu mouseover and mouseout handler// 
 let dropdownaboutus=document.querySelectorAll(".dropdownaboutus")

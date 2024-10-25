@@ -160,6 +160,8 @@
 /* menu end */
 /*... panel start.... */
 
+
+
  .panel {
    margin-top: -31px;
    margin-bottom: 0px;
@@ -173,90 +175,71 @@
     font-size: 16px;
 }
 /* photo section -container */ 
+.photocontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  margin: 0;
+  background-color: #f0f0f0;
+
+
+}
 
 .slider {
-  width: 96%;
-  position: relative;
-  height: 550px;
+  width: 1280px;
+  height: 550px; /* Keep the height to 550px as desired */
   margin: 0 auto;
-  /* border: 4px solid green; */
- 
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.slider ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: calc(1280px * 12); /* 6 originals + 6 duplicates */
 }
 
-.slider li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slider img {
+.slide {
+  width: 1280px;
   height: 550px;
-  width: 1350px;
-  /* width: 100%; */
-  /* width: 98%; */
-
-  /* border-radius: 15px; */
-   /* border: 3px solid  red; */
-
+  object-fit: cover; /* Ensures the image fills the container */
+  background-color: #f0f0f0; /* Optional: background color for visual consistency */
 }
-
-
-.slider li.active {
-   opacity: 1;
-}
-
-.slider .caption {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   background-color: rgba(0, 0, 0, 0.5);
-   color: #fff;
-   font-size: 18px;
-   padding: 10px;
-   text-align: center;
-}
-
-.btn {
-   background-color: rgb(59, 59, 170);
-   color: white;
-   padding: 5px 40px;
-}
-/* footer */
-/* .address {
-   display: flex;
-   justify-content: space-around;
-   padding-top: 10px;
-   color: blue;
-}
-.copyright {
-   text-align: center;
-  margin-bottom: 0px;
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 10px;
- 
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+  text-align: center;
 }
-.footer {
-  
-   display: flex;
- 
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+color: white;
+  cursor: pointer;
+  font-size: 50px;
+  z-index: 2;
 }
-.copyright {
-   width: 85%;
-   margin: 0 auto;
-   border: 20x solid sienna;
-}  */
 
-/* .fa-2x {
-   cursor: pointer;
-} */
+.arrow.left {
+  left: 1px;
+
+
+}
+
+.arrow.right {
+  right: 1px;
+}
+
+/* photo end */
+
 /* middle panel general style  */
   .missiontext,
   .contactusconetent,
