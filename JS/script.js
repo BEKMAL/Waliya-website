@@ -461,8 +461,8 @@ hirepurchasemenu.addEventListener("click",function(e){
 
 
   window.addEventListener('scroll', function() {
-      images.forEach((img, index) => {
-        // if (index === 0) return;
+      images.forEach((img, inde) => {
+        if (inde === 0) return;
           const imgPosition = img.getBoundingClientRect().top; // Get position relative to viewport
           const scrollPosition = window.innerHeight; // Trigger animation when the image is in view
 
