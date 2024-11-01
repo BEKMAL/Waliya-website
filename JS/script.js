@@ -44,13 +44,27 @@ function prevSlide() {
     updateSlidePosition();
   }
 }
-
 // Automatically move to the next slide every 3 seconds
 setInterval(nextSlide, 3000);
 
+//brocher slider 
+// Add an event listener for scrolling
+// let animationTriggered = false; // To ensure it only runs once
+
+// window.addEventListener('scroll', function() {
+//     if (!animationTriggered) {
+//         const marqueeText = document.querySelector('.marquee-text');
+//         marqueeText.style.transform = 'translateX(0)'; // Move to the right edge
+//         animationTriggered = true; // Prevent further scrolling triggers
+//     }
+// });
 
 
-//end of homepage image xhanger
+
+// end of brocher slide
+
+
+
 
 // about us menu mouseover and mouseout handler// 
 let dropdownaboutus=document.querySelectorAll(".dropdownaboutus")
@@ -436,6 +450,28 @@ hirepurchasemenu.addEventListener("click",function(e){
       element.style.display="none"
     })
   })
+
+  //slide effect
+  const images = document.querySelectorAll('.image-slide');
+
+  // Immediately slide in the first image
+  
+  images[0].classList.add('visible');
+
+
+
+  window.addEventListener('scroll', function() {
+      images.forEach((img, index) => {
+        // if (index === 0) return;
+          const imgPosition = img.getBoundingClientRect().top; // Get position relative to viewport
+          const scrollPosition = window.innerHeight; // Trigger animation when the image is in view
+
+          if (imgPosition < scrollPosition) {
+              img.classList.add('visible'); // Slide in the image when it reaches scroll position
+          }
+      });
+  });
+  // end of slide effect
  })
  reportmenu.addEventListener("click",function(e){
   e.preventDefault() 
@@ -673,6 +709,5 @@ announcementlink.addEventListener("click",function(e){
   e.preventDefault()
   contactseemorecontent.style.display="block"
   contactseemore.style.display="none"
- 
  })
 

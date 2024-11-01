@@ -10,6 +10,7 @@
    position: sticky;
    top: 0;
    z-index: 99;
+   background-color: white;
   }
   .header
   {
@@ -102,7 +103,8 @@
 }
  /* menu start */
 .menucontainer {
-  height: 60px;
+  height: 29px;
+  font-family: " Times new roman", sans-serif;
 }
 .menucontainer ul{
    display: flex;
@@ -163,31 +165,34 @@
 
 
  .panel {
-   margin-top: -31px;
+  
    margin-bottom: 0px;
 }
 .middlepanel  {
    text-align: justify;
-   font-family: "Moderustic", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 16px;
+   font-family: " Times new roman", sans-serif;
+   /* font-family: "Moderustic", sans-serif; */
+   font-style: normal;
+   font-size: 16px;
+   font-weight: 400;
+  line-height: 26px;
+
 }
 /* photo section -container */ 
 .photocontent {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
  
   margin: 0;
-  background-color: #f0f0f0;
+ 
 
 
 }
 
 .slider {
-  width: 1280px;
+  width: 1280px;  /* orginal photo width*/
   height: 550px; /* Keep the height to 550px as desired */
   margin: 0 auto;
   overflow: hidden;
@@ -222,9 +227,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-color: white;
+  color: white;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 40px;
   z-index: 2;
 }
 
@@ -255,7 +260,10 @@ color: white;
   .consultancycontent,
   .newscontent,
   .leasefinancecontent,
-  .announcementcontent
+  .announcementcontent,
+  .hirepurchasecontentonhome,
+  .financialleasecontentonhome
+  
  {
    margin: 40px 80px;
   }
@@ -271,13 +279,11 @@ color: white;
    
     text-align: center;
     height: 300px;
-    /* color: blue; */
     font-weight: bold;
     font-size: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: rgb(221, 212, 212); */
 
   }
   .each_title{
@@ -285,9 +291,19 @@ color: white;
    font-size: 18px;
    font-weight: bold;
   }
-  .subtitle {
+  .headofficecontact  {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+   
+   }
+  .subtitle,
+  .headofficecontact span {
    color: blue;
   }
+  .hirepurchasecontentonhome ul li,
+  .financialleasecontentonhome ul li,
   .hirepurchasecontent ul li,
   .financialleasecontent ul li,
   .plancontent ul li,
@@ -298,10 +314,147 @@ color: white;
   .traningcontent ul li{
    margin-left: 40px;
   }
+  .contenttitle {
+   
+    color: #0088cc;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .dflex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .dcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mission i,
+  .vision i,
+  .values i
+  {
+    font-size: 50px;
+    color: #0088cc;
+    margin-top: 20px;
+   
+  }
+  .missiontext p{
+    font-size: 13px;
+   font-weight: bold;
+   color: black;
+  
+  
+  }
+  .missiontitle,
+  .visiontitle,
+  .valuestitle
+  {
+    color:blue ;
+    font-size:40px ;
+    padding: 10px;
+    display: inline-block;
+    
+   
+    
+  }
+  .values {
+   width: 70%;
+  margin: 0 auto;
+   
+
+  }
+  .iconsubtitle {
+    display: inline-block;
+    font-size: 30px;
+  }
+  .valuecontent i,
+  .stackholderscontent i,
+  .hirepurchasecontent i,
+  .financialleasecontent i,
+  .plancontent i,
+  .financialleasecontentonhome i
+  {
+    font-size: 30px;
+    color: #0088cc;
+  }
+  .faqquestions div {
+    margin-left: 60px;
+  }
+  .faqquestions i {
+    font-size: 20px;
+    color: #0088cc;
+   
+  }
+ .faqquestions p {
+    font-size: 16px;
+   
+  }
+  .faqcontent .contenttitle {
+    font-size: 24px;
+  }
+  .hirepurchasecontentonhome .each_subtitle,
+  .financialleasecontentonhome .each_subtitle
+   {
+    font-size: 30px;
+    color: #0088cc;
+   
+   
+   }
+   .hirepurchasecontentonhome .each_subtitle {
+    margin-top: 50px;
+   }
+   .financialleasecontentonhome
+   {
+    margin-top: 0px;
+   
+   }
+   .trainingimagecontainer {
+    background-image: url("../image/traninglease.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    /* border: 2px solid green; */
+   }
+   .traningcontentlist {
+    text-align: left;
+   }
+/* brocher slide start here */
+
+.image-container {
+  position: relative;
+  width: 100%;
+  
+  overflow: hidden;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+.image-slide
+ {
+
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1s ease;
+  border: 2px solid #0088cc;
+ 
+}
+/* Class to apply the slide-in effect */
+.image-slide.visible{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+
+
+/* end of brocher slide */
+
+
   /* end of middle panel general style  */
- .headofficecontact span {
-   color: blue;
- }
+
 
 /* footer sytle start */
 
