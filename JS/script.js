@@ -459,7 +459,7 @@ hirepurchasemenu.addEventListener("click",function(e){
   // images[0].classList.add('visible');
 
 
-window.scrollBy(0,1);
+window.scrollBy(0,1);   // little scroll effect for 1st image to slide
 
   window.addEventListener('scroll', function() {
       images.forEach((img, inde) => {
@@ -472,7 +472,7 @@ window.scrollBy(0,1);
           }
       });
   });
-  window.scrollBy(0,-1);
+  window.scrollBy(0,-1); // remove the little scroll effect for 1st image to slide
   // end of slide effect
  })
  reportmenu.addEventListener("click",function(e){
