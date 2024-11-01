@@ -456,13 +456,14 @@ hirepurchasemenu.addEventListener("click",function(e){
 
   // Immediately slide in the first image
   
-  images[0].classList.add('visible');
+  // images[0].classList.add('visible');
 
 
+window.scrollBy(0,1);
 
   window.addEventListener('scroll', function() {
       images.forEach((img, inde) => {
-        if (inde === 0) return;
+        // if (inde === 0) return;
           const imgPosition = img.getBoundingClientRect().top; // Get position relative to viewport
           const scrollPosition = window.innerHeight; // Trigger animation when the image is in view
 
@@ -471,6 +472,7 @@ hirepurchasemenu.addEventListener("click",function(e){
           }
       });
   });
+  window.scrollBy(0,-1);
   // end of slide effect
  })
  reportmenu.addEventListener("click",function(e){
