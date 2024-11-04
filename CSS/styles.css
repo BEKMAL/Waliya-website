@@ -528,4 +528,35 @@
 
 }
 /* end of footer sytle  */
+/* media query for mobile screen */
+@media (max-width: 768px) {
+ .logo {
+  display: none;
+ }
+ .search {
+  display: none;
+ }
+ .socialmediapanel {
+  display: none;
+ }
+ .title {
 
+
+  margin-left: 1%;   /* to decrease justify distance b/n logo and title */
+}
+.menucontainer ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  /* gap: 70px; */
+  background-color: #274c9d;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 0.5px;
+}
+}
+/* media query for tablet screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet-specific styles */
+}
