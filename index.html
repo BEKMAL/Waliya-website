@@ -32,7 +32,8 @@
     <div class="maincontainer">
         <header class="top"> 
               <section class="header">
-                  <div class="logo"><a href="/"><img src="images/logo2.png" alt=""></a></div>
+                  <div class="logo"><a href="/"><img src="images/logo2.png" alt="" id="logoimage"></a></div>
+                  <div class="logomobile"><a href="/"><img src="images/logomobile.png" alt=""></a></div>
                   <div class="title">
                       <div class="titleam">ዋልያ የካፒታል ዕቃ ፋይናንስ ንግድ ስራ አ.ማ</div>
                       <div class="titleen">Waliya Capital Goods Finance Business S.C</div>
@@ -74,15 +75,21 @@
                   <div class="lan">
                     <div class="lanlist">
                       <ul>
-                        <li><a href="">Amharic</a></li>
-                        <li><a href="">English</a></li>
+                        <li><a href="amharic.html" target="_parent" id="Amharic">Amharic</a></li>
+                        <li><a href="index.html"  id="English">English</a></li>
                       </ul>
                   </div>
                 
                 
                   
                   </div>
-                
+                 <div class="lanmobile">
+                  <select id="language-select" onchange="changeLanguage()">
+                    <option value="amharic.html">አማ</option>
+                    <option value="index.html" selected>EN</option>
+                 </select>
+
+                 </div>
               </section>  
               <section class="menucontainer">
                 <ul>
@@ -95,7 +102,7 @@
                       </div>
                     </div>
                     <div class="dropdown dropdownservice">
-                        <button class="dropbtn">Services and Products</button>
+                        <button class="dropbtn">Services</button>
                         <div class="dropdown-content dropdown-contentservice">
                           <a href="#"  id="hirepurchasemenu">Hire Purchase</a>
                           <a href="#" id="financialleasemenu">Financial Lease</a>
@@ -176,7 +183,7 @@
                                     <ul>
                                       <i class="fa-solid fa-building-columns"></i>
                                   
-                                    <p class="subtitle iconsubtitle">Construction & input productions</p>
+                                    <p class="subtitle iconsubtitle">Construction and input productions</p>
                                     </ul>
                                   </ul>
                                   <ul>
@@ -193,6 +200,30 @@
                                   </ul>
                                 </div>
                                 
+                            </div>
+                            <div id="requirementcontentonhome" class="requirementcontent requirementcontentonhome">
+                              <p class="each_subtitle" >Eligibilities and   Requirements to get our services</p>
+                              <p>Requirements or eligible criteria to get a lease Finance from our company are:- </p>
+                              <ul>
+                              <li>Fully aware of the lease services of the leasing company/well know the service rendered by the company;</li>
+                              <li>Sufficient knowledge, skill and understanding of the machinery /equipment/  required by the MSMEs;</li>
+                              <li>The amount of lease capital /the total value of the asset/ required to be leased from Birr 25,000 to 10 million;</li>
+                              <li>Can provide/submit/ a Business Plan or Can submit a Project Proposal for projects worth over 5 million Birr;</li>
+                              <li>Ability to save up to 15 to 30 percent of the total value of the leased asset of the MSMEs ;</li>
+                              <li>Provide detail specifications for the machine to be purchased:</li>
+                              <li>The infrastructure is complete with adequate production and sales space;</li>
+                              <li>The MSMEs have to be submitted a renewed business license, registration certificate and Taxpayer Identification Number (TIN);</li>
+                              <li>Audited accounts of existing enterprises; otherwise are new, willing to investigate;</li>
+                              <li>Have a good credit history from other lending financial institutions;</li>
+                              <li>Those who have operating funds or can get a loan from the Financial institutions;</li>
+                              <li>Those who are willing to cover for travel and fire insurance and are willing to renew their machines/equipment/ agreement annually;</li>
+                              <li>Those who are willing to register the contracts and also the machines/equipment;</li>
+                              <li>Willing to maintain the leased asset /machine/ properly and repairs the machine/asset/ in the event of a breakdown;</li>
+                              <li>Provide evidence of marital status (married / unmarried)</li>
+                              <li>Provide renewed residency ID from kebeles (sub-cities);</li>
+                              <li>The MSMEs, who are interested in engaging in priority activities (sectors)</li>
+              
+                              </ul>
                             </div>
                       </div>
                       <div class="missiontext" id="missiontext">
@@ -245,37 +276,37 @@
                                          <div class="valuecontent">
                                         
                                           <i class="fa-sharp fa-solid fa-square-check"></i>
-                                          <p class="iconsubtitle">Excellence services:</p>
+                                          <p class="iconsubtitle bold">Excellence services:</p>
                                           <p>The Company commits itself to the attainment of the highest standards in capital goods financing performance by delivering high-quality equipment, services and supports of enterprises and customers promoting excellence in research.</br></P>
                                             <i class="fa-sharp fa-solid fa-square-check"></i>
-                                            <p class="iconsubtitle">Innovation:</p>
+                                            <p class="iconsubtitle bold">Innovation:</p>
                                               <p> The Company promotes the development of innovative ideas that are marketable and that address economical needs.</br></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Accountability and Transparency:</p>
+                                              <p class="iconsubtitle bold">Accountability and Transparency:</p>
                                               <p> Reliable and regularly updated financial and results data are an essential component of informing, monitoring, reporting and evaluating progress towards achieving decent work for all our stakeholders. Therefore, The Company ensures financial and equipment assets management accountability and transparency through responsible decision making and prudent management of resources entrusted to it.</br></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Integrity and honesty: </p>
+                                              <p class="iconsubtitle bold">Integrity and honesty: </p>
                                               <p>  The Company fosters honesty, integrity, fairness and ethical and professional codes of conduct in its operation, research, and managing of its resources. </br></p>
                                               <p><b>Customer focused: </b>   The Company strives to provide high quality services and benefit to its customers effectively and efficiently. </br></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Responsiveness:    </p>
+                                              <p class="iconsubtitle bold">Responsiveness:    </p>
                                               <p>  The Company ensures that clients are served helpfully and responsibly by our managements and staffs. The first step we act according to responsiveness is to commit to interact cooperatively and respectfully with clients. When a client enters our office and facility and asks for help, the front-line service provider must listen to him and come to understand what need the client is expressing. </br></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Teamwork:  </p>
+                                              <p class="iconsubtitle bold">Teamwork:  </p>
                                               <p>  The company is highly committed to bring collaborative effort of a group to achieve a common goal or to complete a task in the most effective and efficient way. </br></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Professionalism:  </p>
+                                              <p class="iconsubtitle bold">Professionalism:  </p>
                                               <p>   Professionalism is excels in the knowledge, skills, and behaviors required by the employs role; delivers the work to the best of the abilities, even on tough days; goes above and beyond the job description; constantly looks for opportunities to grow and improve the company. </br></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Sense of owner ship:   </p>
+                                              <p class="iconsubtitle bold">Sense of owner ship:   </p>
                                               <p>    It is about taking initiative which means we believe that taking action is not someone else’s responsibility. We as a group or an individual are accountable for the quality and timeliness of an outcome, even when we’re working with others. It does mean we have an obligation to the results of the company and that we have an obligation to act on items that impact those results. </br></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Motto  </p>
+                                              <p class="iconsubtitle bold">Motto  </p>
                                               <p></p>    
-                                              <p>Customer satisfaction is our first best</p>
+                                              <p > <b>Customer satisfaction is our first best</b></p>
                                               <i class="fa-sharp fa-solid fa-square-check"></i>
-                                              <p class="iconsubtitle">Marketing Slogan:  </p>
-                                              <p>Ethiopia’s choice for capital goods financing</p>
+                                              <p class="iconsubtitle bold">Marketing Slogan:  </p>
+                                              <p ><b>Ethiopia’s choice for capital goods financing</b></p>
                                          </div>
                                        </div>
                                          
@@ -370,11 +401,17 @@
                       </div>
                       <div class="traningcontent" id="traningcontent">
                         <p class="each_title contenttitle"> Training</p>
-                        <ul>
-                            <p>Training is one of our services. Training services are provided by various entities that enable productive enterprises to lead their business with better knowledge and skills. In particular, the enterprises that are recruited to receive the services of the company will be given training on matters of great importance to business efficiency. 
-                            On-the-job training is also available for existing customers, for example, there are many who have received training on business management skills from the World Bank and other cooperating institutions. Apart from this, they will be given professional support when they want to provide training to various bodies in the sector. Our training services are mainly focused on the following areas.</p>
-                          <div class="dflex">
+                        <p >Training is one of our services. Training services are provided by various entities that enable productive enterprises to lead their business with better knowledge and skills. In particular, the enterprises that are recruited to receive the services of the company will be given training on matters of great importance to business efficiency. 
+                          On-the-job training is also available for existing customers, for example, there are many who have received training on business management skills from the World Bank and other cooperating institutions. Apart from this, they will be given professional support when they want to provide training to various bodies in the sector.</p>
+                        <div class="traningtopimagecon">
+
+                        </div>
+                          <ul>
+                           
+                          
+                            <div class="dflex">
                             <div class="traningcontentlist">
+                              <p>Our training services are mainly focused on the following areas</p>
                               <li>	Entrepreneurship </li>
                               <li>	Business feasibility study </li>
                               <li>	business plan preparation </li>
@@ -502,8 +539,8 @@
                                 <p  class="iconsubtitle"><span>Email:</span>waliyacapital@gmail.com </p>
                                </div>
                                <div>
-                                <i class="fa-sharp fa-solid fa-square-check"></i>
-                                <p  class="iconsubtitle"><span>Facebook:</span><a href="https://web.facebook.com/people/Waliya-Capital-Goods-Finance-Business-Share-Company/100064172732176/" target="_blank" rel="noopener noreferrer" > Waliya Capital Goods Finance Business Share Company</a> </p>
+                                
+                                <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i><span > Facebook:</span><a href="https://web.facebook.com/people/Waliya-Capital-Goods-Finance-Business-Share-Company/100064172732176/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Waliya Capital Goods Finance Business Share Company</a> </p>
                                </div>
                             </div>
                           </div>
@@ -520,7 +557,8 @@
                            
                                <div class="dflex">
                                 <div class="branchcontact">
-                                 
+                                  <div> <i class="fa-sharp fa-solid fa-square-check"></i>
+                                    <p class="iconsubtitle">	Addis Ababa Branch +251 11 170 6079</p></div>
                                   <div>
                                     <i class="fa-sharp fa-solid fa-square-check"></i>
                                     <p  class="iconsubtitle">Bahir Dar Branch +251 58 222 1443</p>
@@ -558,12 +596,11 @@
                                       <p class="iconsubtitle">	Kombolcha Branch +251 33 851 4165</p></div>
                                      <div> <i class="fa-sharp fa-solid fa-square-check"></i>
                                       <p class="iconsubtitle">	Woldya Branch +251 33 331 2585</p></div>
-                                     <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                      <p class="iconsubtitle">	Finote Selam Branch +251 58 775 0117</p></div>
+                                    
                                 </div>
                                   <div class="branchcontact">
                                     <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                      <p class="iconsubtitle">	Addis Ababa Branch +251 11 170 6079</p></div>
+                                      <p class="iconsubtitle">	Finote Selam Branch +251 58 775 0117</p></div>
                                      <div> <i class="fa-sharp fa-solid fa-square-check"></i>
                                       <p class="iconsubtitle">	Debre Tabor Branch +251 58 141 0320</p></div>
                                      <div> <i class="fa-sharp fa-solid fa-square-check"></i>
@@ -603,91 +640,91 @@
                         <p class="each_title contenttitle">These are frequently asked questions (FAQ)</p>
                         <div class="faqquestions">
                               <div>
-                              <i class="fa-solid fa-box"></i>
-                              <p class="iconsubtitle">What are Eligibilities and Criteria’s to get your Services?</p>
+                              
+                              <p class="iconsubtitle"><i class="fa-solid fa-box"></i> What are Eligibilities and Criteria to get your Services?</p>
                             </div>
                             <div>
                               <i class="fa-solid fa-box"></i>
-                              <p class="iconsubtitle">Where are your offices and thier address?</p>
+                              <p class="iconsubtitle"> Where are your offices and thier address?</p>
                             </div>
                             <div>
                               <i class="fa-solid fa-box"></i>
-                              <p class="iconsubtitle">What are the company's services and products?</p>
+                              <p class="iconsubtitle"> What are the company's services and products?</p>
                             </div>
                             <div>
-                              <i class="fa-solid fa-box"></i>
-                              <p class="iconsubtitle">How can I get machinery Suppliers & know the cost?</p>
+                              
+                              <p class="iconsubtitle"><i class="fa-solid fa-box"></i> How can I get machinery Suppliers & know the cost?</p>
                             </div>
                             <div>
-                              <i class="fa-solid fa-box"></i>
-                              <p class="iconsubtitle">Can you solve the infrastructure (working place and electricity) problem?</p>
+                              
+                              <p class="iconsubtitle"><i class="fa-solid fa-box"></i> Can you solve the infrastructure (working place and electricity) problem?</p>
                             </div>
                         </div>
                         <p class="each_title contenttitle">These are Answers for frequently asked questions (FAQ)</p>
                         <div class="faqrequiremnt">
                           <div class="faqquestions">
                                 <div>
-                                <i class="fa-solid fa-box"></i>
-                                <p class="subtitle      iconsubtitle">What are Eligibilities and Criteria’s to get your Services?</p>
+                               
+                                <p class="subtitle      iconsubtitle"> <i class="fa-solid fa-box"></i> Eligibilities and Criteria to get our Services?</p>
                                 </div>
                                  <div>
                                 <div>
-                                  <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p  class="iconsubtitle">Fully aware of the lease services of the leasing company/well know the service rendered by the company;</p>
+                                 
+                                  <p  class="iconsubtitle"> <i class="fa-sharp fa-solid fa-square-check"></i> Fully aware of the lease services of the leasing company/well know the service rendered by the company;</p>
                                  </div>
                                  <div>
-                                  <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p  class="iconsubtitle">Sufficient knowledge, skill and understanding of the machinery /equipment/  required by the MSMEs;</p>
+                                 
+                                  <p  class="iconsubtitle"> <i class="fa-sharp fa-solid fa-square-check"></i> Sufficient knowledge, skill and understanding of the machinery /equipment/  required by the MSMEs;</p>
                                  </div>
                                  <div>
-                                  <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p  class="iconsubtitle">The amount of lease capital /the total value of the asset/ required to be leased from Birr 25,000 to 10 million;</p>
+                                  
+                                  <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> The amount of lease capital /the total value of the asset/ required to be leased from Birr 25,000 to 10 million;</p>
                                  </div>
                                  <div>
-                                  <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p  class="iconsubtitle">Can provide/submit/ a Business Plan or Can submit a Project Proposal for projects worth over 5 million Birr;</p>
+                                 
+                                  <p  class="iconsubtitle"> <i class="fa-sharp fa-solid fa-square-check"></i> Can provide/submit/ a Business Plan or Can submit a Project Proposal for projects worth over 5 million Birr;</p>
                                  </div>
                                  <div>
-                                  <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p  class="iconsubtitle">Ability to save up to 15 to 30 percent of the total value of the leased asset of the MSMEs ;</p>
+                                  
+                                  <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Ability to save up to 15 to 30 percent of the total value of the leased asset of the MSMEs ;</p>
                                  </div>
                                   <div>
                                     <p class="seemore" id="reqseemore"><a href="#" >See more</a></p>
                                   </div>
                                   <section class="reqseemorecontent"  id="reqseemorecontent" >
                                       <div>
-                                        <i class="fa-sharp fa-solid fa-square-check"></i>
-                                        <p class="iconsubtitle">Provide detail specifications for the machine to be purchased:</p>
+                                        
+                                        <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Provide detail specifications for the machine to be purchased:</p>
                                       </div>
                                        <div>
-                                        <i class="fa-sharp fa-solid fa-square-check"></i>
-                                        <p class="iconsubtitle">The infrastructure is complete with adequate production and sales space;</p>
+                                       
+                                        <p class="iconsubtitle"> <i class="fa-sharp fa-solid fa-square-check"></i> The infrastructure is complete with adequate production and sales space;</p>
                                        </div>
                                        <div>
-                                        <i class="fa-sharp fa-solid fa-square-check"></i>
-                                        <p class="iconsubtitle">The MSMEs have to be submitted a renewed business license, registration certificate and TIN;</p>
+                                       
+                                        <p class="iconsubtitle"> <i class="fa-sharp fa-solid fa-square-check"></i> The MSMEs have to be submitted a renewed business license, registration certificate and TIN;</p>
                                        </div>
 
                                     <div>
-                                      <i class="fa-sharp fa-solid fa-square-check"></i>
-                                      <p class="iconsubtitle">Audited accounts of existing enterprises; otherwise are new, willing to investigate;</p>
+                                     
+                                      <p class="iconsubtitle"> <i class="fa-sharp fa-solid fa-square-check"></i> Audited accounts of existing enterprises; otherwise are new, willing to investigate;</p>
                                     </div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">Have a good credit history from other lending financial institutions;</p></div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">Those who have operating funds or can get a loan from the Financial institutions;</p></div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">Those who are willing to cover for travel and fire insurance and are willing to renew their machines/equipment/ agreement annually;</p></div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">Those who are willing to register the contracts and also the machines/equipment;</p></div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">Willing to maintain the leased asset /machine/ properly and repairs the machine/asset/ in the event of a breakdown;</p></div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">Provide evidence of marital status (married / unmarried)</p></div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">Provide renewed residency ID from kebeles (sub-cities);</p></div>
-                                 <div> <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p class="iconsubtitle">The MSMEs, who are interested in engaging in priority activities (sectors)</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Have a good credit history from other lending financial institutions;</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Those who have operating funds or can get a loan from the Financial institutions;</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Those who are willing to cover for travel and fire insurance and are willing to renew their machines/equipment/ agreement annually;</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Those who are willing to register the contracts and also the machines/equipment;</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Willing to maintain the leased asset /machine/ properly and repairs the machine/asset/ in the event of a breakdown;</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Provide evidence of marital status (married / unmarried)</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> Provide renewed residency ID from kebeles (sub-cities);</p></div>
+                                 <div> 
+                                  <p class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> The MSMEs, who are interested in engaging in priority activities (sectors)</p></div>
 
                                   </section>
                             </div>
@@ -698,7 +735,7 @@
                           <div class="faqquestions">
                                <div>
                                   <i class="fa-solid fa-box"></i>
-                                  <p class="subtitle   iconsubtitle">Where are your offices and thier address?</p>
+                                  <p class="subtitle   iconsubtitle">Our offices and thier address?</p>
                                </div>
                                <div>
                               
@@ -716,8 +753,8 @@
                                   <p  class="iconsubtitle"><span>Email:</span>waliyacapital@gmail.com </p>
                                  </div>
                                  <div>
-                                  <i class="fa-sharp fa-solid fa-square-check"></i>
-                                  <p  class="iconsubtitle"><span>Facebook:</span><a href="https://web.facebook.com/people/Waliya-Capital-Goods-Finance-Business-Share-Company/100064172732176/" target="_blank" rel="noopener noreferrer" > Waliya Capital Goods Finance Business Share Company</a> </p>
+                                 
+                                  <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i><span> Facebook:</span><a href="https://web.facebook.com/people/Waliya-Capital-Goods-Finance-Business-Share-Company/100064172732176/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Waliya Capital Goods Finance Business Share Company</a> </p>
                                  </div>
                                  <div> <p class="subtitle">Branchs’ Address</p></div>
                                  <div>
@@ -797,7 +834,7 @@
                           <div class="faqquestions">
                             <div>
                                 <i class="fa-solid fa-box"></i>
-                                <p class="subtitle   iconsubtitle">What are the company products and services?</p>
+                                <p class="subtitle   iconsubtitle">Our products and services?</p>
                                 </div>
                             <div>
                               
@@ -825,12 +862,12 @@
                           <div class="faqquestions">
                             <div>
                                 <i class="fa-solid fa-box"></i>
-                                <p class="subtitle   iconsubtitle">How can I get machinery costs and Suppliers?</p>
+                                <p class="subtitle   iconsubtitle">Regarding machinery costs and Suppliers</p>
                                 </div>
                             <div>
                                 <div>
                                   
-                                   <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i>We are to finance to the requested machineries. So, the due costumers must have sufficient understanding 
+                                   <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> We are to finance to the requested machineries. So, the due costumers must have sufficient understanding 
                                    and Knowledge on the business area and the needed machineries including their cost and suppliers.</p>
                                  </div>
                             </div>
@@ -839,13 +876,13 @@
                         <div class="faqinfrastructure">
                           <div class="faqquestions">
                             <div>
-                                <i class="fa-solid fa-box"></i>
-                                <p class="subtitle   iconsubtitle">Can you solve the infrastructure (working place and electricity) problem?</p>
+                                
+                                <p class="subtitle   iconsubtitle"><i class="fa-solid fa-box"></i> Regarding infrastructure (working place and electricity) </p>
                                 </div>
                             <div>
                                 <div>
                                   
-                                   <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i>As briefly stated on Eligibilities and Criteria to be fulfill, we are serving only enterprises who get ready fully infrastructure Working place. So, passable production and sales space issues may head for the government bodies.</p>
+                                   <p  class="iconsubtitle"><i class="fa-sharp fa-solid fa-square-check"></i> As briefly stated on Eligibilities and Criteria to be fulfill, we are serving only enterprises who get ready fully infrastructure Working place. So, passable production and sales space issues may head for the government bodies.</p>
                                  </div>
                             </div>
                           </div>
@@ -853,7 +890,7 @@
                       </div>
                       <div id="requirementcontent" class="requirementcontent">
                         <p class="each_title contenttitle">Eligibilities and   Requirements to get our services</p>
-                        <p>The company has leasing policy and operational manual; based on this, the MSMEs requirements or eligible criteria to get a lease Finance from our company are:- </p>
+                        <p> Requirements or eligible criteria to get a lease Finance from our company are:- </p>
                         <ul>
                         <li>Fully aware of the lease services of the leasing company/well know the service rendered by the company;</li>
                         <li>Sufficient knowledge, skill and understanding of the machinery /equipment/  required by the MSMEs;</li>
@@ -881,11 +918,11 @@
                         <div class="stackholderscontent">
                        
                           <p>WCGFB S.C has been undertaking three fundamental functions namely Resource mobilization, equipment purchase, and equipment lease engagement. The value propositions of stakeholders in terms of three major functions of the company have been identified and their association with the activities of the Company.</p>
-                          <div class="dflex">
+                          <div class="dflex ">
                             <div >
                               <ul>
                                 <i class="fa-sharp fa-solid fa-square-check"></i>
-                                <p class="iconsubtitle">Internal</p>
+                                <p class="iconsubtitle ">Internal</p>
                                
                                 <li>	Company Board/ shareholders</li>
                                 <li>	Company Management</li>
@@ -894,14 +931,14 @@
                               </ul>
                               <ul>
                                 <i class="fa-sharp fa-solid fa-square-check"></i>
-                                <p class="iconsubtitle">External</p>
+                                <p class="iconsubtitle ">External</p>
                              
                               <li>	NBE</li>
                               <li>	Customer/Lessee</li>
                               <li>	Supplier/manufacturer</li>
                               <li>	Financer/Donors</li>
     
-                              <li ><span class="subtitle">Regional Government and <br> local administrations/Institutions:-</span>
+                              <li><span >Regional gov't and  local administrations:-</span>
                                         <ul>
                                           <li>Labour and training offices</li>
                                           <li>Tseady Bank s.c</li>
@@ -947,7 +984,7 @@
           <div class="usefulLinks">
                 <h4>Related Links</h4>
                 <ul>
-                  <li><a href="https://nbe.gov.et/" target="_blank" rel="noopener noreferrer">National Ban of Ethiopia</a></li>
+                  <li><a href="https://nbe.gov.et/" target="_blank" rel="noopener noreferrer">National Bank of Ethiopia</a></li>
                   <li><a href=" #" target="_blank" rel="noopener noreferrer">Ethiopian Enterprise  Development </a></li>
                   <li><a href="https://www.dbe.com.et/" target="_blank" rel="noopener noreferrer">Development  Bank of Ethiopia</a></li>  
                 </ul>

@@ -3,7 +3,17 @@
 const slideTrack = document.querySelector(".slide-track");
 const slides = document.querySelectorAll(".slide");
 const captionElement = document.getElementById("caption");
-const slideWidth = 1280; // updated width of each slide
+let slideWidth; // updated width of each slide
+if(window.innerWidth <= 768){
+  slideWidth = 360;
+  
+}
+else if(window.innerWidth >= 768 && window.innerWidth <= 1024 ){
+  slideWidth = 600;
+}
+else {
+  slideWidth = 1280;
+}
 let index = 0;
 
 captionElement.textContent = slides[index].getAttribute("data-caption");
@@ -47,21 +57,7 @@ function prevSlide() {
 // Automatically move to the next slide every 3 seconds
 setInterval(nextSlide, 3000);
 
-//brocher slider 
-// Add an event listener for scrolling
-// let animationTriggered = false; // To ensure it only runs once
 
-// window.addEventListener('scroll', function() {
-//     if (!animationTriggered) {
-//         const marqueeText = document.querySelector('.marquee-text');
-//         marqueeText.style.transform = 'translateX(0)'; // Move to the right edge
-//         animationTriggered = true; // Prevent further scrolling triggers
-//     }
-// });
-
-
-
-// end of brocher slide
 
 
 
@@ -712,4 +708,10 @@ announcementlink.addEventListener("click",function(e){
   contactseemorecontent.style.display="block"
   contactseemore.style.display="none"
  })
-
+ //Languagechange mobile
+ function changeLanguage() {
+  const selectedlanguage = document.getElementById("language-select").value;
+    window.location.href=selectedlanguage
+    // window.location.pathname
+}
+ //end of Language change

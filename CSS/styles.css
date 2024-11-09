@@ -23,11 +23,16 @@
   .logo  {
    margin-left: 2%;
   }
+  .logomobile {
+    display: none;
+    }
  .title {
 
    color: white;
    padding-top: 2%;
-   margin-left: -9%;   /* to decrease justify distance b/n logo and title */
+   margin-left: -9%;    /*to decrease justify distance b/n logo and title */
+
+ 
  }
  .titleam
  {
@@ -101,6 +106,11 @@
    color: white;
   
 }
+.lanmobile {
+  display: none;
+  background-color: #0088cc;
+
+}
  /* menu start */
 .menucontainer {
   height: 29px;
@@ -129,11 +139,13 @@
    padding: inherit;
    font-size: inherit;
    border: none;
+  
  }
  
  .dropdown {
    position: relative;
    display: inline-block;
+   
  
  }
  
@@ -144,6 +156,8 @@
    min-width: 260px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
+   /* margin-left: -70px;     */
+  /* to center the dropdown   */
  }
  .menucontainer div a {     /*for menu with dropdown a */
    color: black;
@@ -155,7 +169,7 @@
  
  .dropdown-content a:hover { background-color: rgb(197, 195, 195);}
  
- /* .dropdown:hover .dropdown-content {display: block;} */
+ /* .dropdown:hover .dropdown-content {display: block;}  this handle using js*/ 
  
  .dropdown:hover .dropbtn {background-color:inherit;}
 
@@ -246,6 +260,7 @@
 /* photo end */
 
 /* middle panel general style  */
+
   .missiontext,
   .contactusconetent,
   .hirepurchasecontent,
@@ -267,6 +282,80 @@
  {
    margin: 40px 80px;
   }
+  .subtitle
+   {
+   color: blue;
+  }
+  .mission i,
+  .vision i,
+  .values i
+  {
+    font-size: 50px;
+    color: #0088cc;
+    margin-top: 20px;
+   
+  }
+.valuecontent i,
+.stackholderscontent i,
+.hirepurchasecontent i,
+.financialleasecontent i,
+.plancontent i,
+.financialleasecontentonhome i
+  {
+    font-size: 30px;
+    color: #0088cc;
+  }
+  .hirepurchasecontentonhome ul li,
+  .financialleasecontentonhome ul li,
+  .hirepurchasecontent ul li,
+  .financialleasecontent ul li,
+  .plancontent ul li,
+  .requirementcontent ul li,
+  .contactusconetent ul li,
+  .stakeholderscontent ul li,
+  .faqcontent ul li,
+  .traningcontent ul li{
+   margin-left: 30px;
+  }
+  .dcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .each_title{
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+   }
+   .iconsubtitle {
+     display: inline-block;
+     font-size: 30px;
+   }
+   .contenttitle {
+   
+    color: #0088cc;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .dflex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .hirepurchasecontentonhome .each_subtitle,
+.financialleasecontentonhome .each_subtitle,
+.requirementcontentonhome .each_subtitle
+ {
+  font-size: 30px;
+  color: #0088cc;
+ 
+ 
+ }
+ .reqonhome_title {
+  font-size: 20px;
+  color: #0088cc;
+ }
   .brochuercontent {
 
    margin-top: 40px;
@@ -286,11 +375,7 @@
     justify-content: center;
 
   }
-  .each_title{
-   color: blue;
-   font-size: 18px;
-   font-weight: bold;
-  }
+
   .headofficecontact  {
     display: flex;
     /* flex-direction: column; */
@@ -298,54 +383,17 @@
     align-items: center;
    
    }
-  .subtitle,
-  .headofficecontact span {
-   color: blue;
-  }
-  .hirepurchasecontentonhome ul li,
-  .financialleasecontentonhome ul li,
-  .hirepurchasecontent ul li,
-  .financialleasecontent ul li,
-  .plancontent ul li,
-  .requirementcontent ul li,
-  .contactusconetent ul li,
-  .stakeholderscontent ul li,
-  .faqcontent ul li,
-  .traningcontent ul li{
-   margin-left: 40px;
-  }
-  .contenttitle {
-   
-    color: #0088cc;
-    font-size: 40px;
-    margin-bottom: 15px;
-  }
-  .dflex {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  .dcenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .mission i,
-  .vision i,
-  .values i
-  {
-    font-size: 50px;
-    color: #0088cc;
-    margin-top: 20px;
-   
-  }
+
   .missiontext p{
     font-size: 13px;
    font-weight: bold;
    color: black;
   
-  
   }
+ 
+ 
+ 
+ 
   .missiontitle,
   .visiontitle,
   .valuestitle
@@ -361,23 +409,8 @@
   .values {
    width: 70%;
   margin: 0 auto;
-   
+  }
 
-  }
-  .iconsubtitle {
-    display: inline-block;
-    font-size: 30px;
-  }
-  .valuecontent i,
-  .stackholderscontent i,
-  .hirepurchasecontent i,
-  .financialleasecontent i,
-  .plancontent i,
-  .financialleasecontentonhome i
-  {
-    font-size: 30px;
-    color: #0088cc;
-  }
   .faqquestions div {
     margin-left: 60px;
   }
@@ -393,14 +426,7 @@
   .faqcontent .contenttitle {
     font-size: 24px;
   }
-  .hirepurchasecontentonhome .each_subtitle,
-  .financialleasecontentonhome .each_subtitle
-   {
-    font-size: 30px;
-    color: #0088cc;
-   
-   
-   }
+
    .hirepurchasecontentonhome .each_subtitle {
     margin-top: 50px;
    }
@@ -408,6 +434,15 @@
    {
     margin-top: 0px;
    
+   }
+   .traningtopimagecon {
+    background-image: url("../image/traningleasetwo.jpg");
+    width: 100%;
+    height:600px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+
    }
    .trainingimagecontainer {
     background-image: url("../image/traninglease.jpg");
@@ -530,33 +565,353 @@
 /* end of footer sytle  */
 /* media query for mobile screen */
 @media (max-width: 768px) {
- .logo {
-  display: none;
+  .header
+  {
+    display: flex;
+    background-color: #0088cc;
+   justify-content: center;
+   /* gap: 35px; */
+    padding-top: 5px;
+    padding-bottom: 3px;
+   
+  }
+ .logo{
+ display: none;
  }
- .search {
-  display: none;
+ .logomobile {
+ display: block;
+
  }
- .socialmediapanel {
-  display: none;
- }
+
  .title {
 
+  color: white;
+  padding-top: 0;
+  margin-left: 0%;
 
-  margin-left: 1%;   /* to decrease justify distance b/n logo and title */
+ }
+
+ .titleam
+ {
+    font-size: 8px;
+    padding: 5px;
+   padding-bottom: 0px;
+   
+
+ }
+ .titleen {
+    font-size: 6px;
+    text-align: center;
+ }
+.search {
+  display: none;
+
+ }
+ .socialmediapanel {
+   
+ display: none;
+ 
+  
+}
+
+.lan {
+ display: none;
+ 
+}
+.lanmobile {
+  display: block;
+  position: relative;
+  left: 20%;
+
+}
+.lanmobile select {
+  background-color: #0088cc;
+  color: white;
+  border: none;
+  font-size: 8px;
+ 
+
+}
+
+ /* menu mobile start */
+ .menucontainer {
+  height: 15px;
+  font-family: " Times new roman", sans-serif;
+ 
 }
 .menucontainer ul{
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  /* gap: 70px; */
-  background-color: #274c9d;
-  color: white;
-  font-size: 14px;
-  padding: 5px;
-  margin-top: 0.5px;
+ 
+   justify-content: space-around;
+   gap: 15px;
+   font-size: 8px;
+ 
+ }
+ .menucontainer ul a {       /*for menu without dropdown a */
+  
+   font-size: 8px;
+ }
+
+ .dropdown-content {
+ 
+   min-width: 160px;
+ 
+  
+ }
+ .menucontainer div a {     /*for menu with dropdown a */
+
+  padding-top: 15px;
+  padding-left: 38px;
+  padding-bottom: 5px;
 }
+.slider {
+  width: 360px;  /* orginal photo width*/
+  height: 200px; /* Keep the height to 550px as desired */
+ background-size: cover;
+ margin-top: 5px;
+ 
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: calc(360px * 12); /* 6 originals + 6 duplicates */
+ 
+}
+
+.slide {
+  width: 360px;
+  height: 200px;
+  background-size: cover;
+
+}
+.caption {
+
+  font-size: 10px;
+ 
+}
+.arrow {
+
+  font-size: 20px;
+ 
+}
+.contenttitle {
+   
+  color: #0088cc;
+  font-size: 20px;
+ 
+}
+.hirepurchasecontentonhome .each_subtitle,
+.financialleasecontentonhome .each_subtitle,
+.requirementcontentonhome .each_subtitle
+ {
+  font-size: 20px;
+  color: #0088cc;
+ 
+ 
+ }
+ .dflex {
+  display: block;
+}
+
+.iconsubtitle {
+  display: inline-block;
+  font-size: 13px;
+}
+.mission i,
+.vision i,
+.values i
+{
+  font-size: 30px;
+  color: #0088cc;
+  margin-top: 20px;
+ 
+}
+.missiontext,
+.contactusconetent,
+.hirepurchasecontent,
+.aboutuscontent,
+.financialleasecontent,
+.reportcontent,
+.plancontent,
+.requirementcontent,
+.stakeholderscontent,
+.faqcontent,
+.traningcontent,
+.consultancycontent,
+.newscontent,
+.leasefinancecontent,
+.announcementcontent,
+.hirepurchasecontentonhome,
+.financialleasecontentonhome
+
+{
+ margin: 40px 40px;
+}
+.valuecontent i,
+.stackholderscontent i,
+.hirepurchasecontent i,
+.financialleasecontent i,
+.plancontent i,
+.financialleasecontentonhome i  {
+ 
+    font-size: 14px;
+    color: #0088cc;
+   
+  }
+  .bold {
+    font-weight: bold;
+  }
+.missiontext p{
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 16px;
+
+  }
+
+ 
+  .missiontitle,
+  .visiontitle,
+  .valuestitle
+  {
+    
+    font-size:20px ;
+  }
+  .values {
+    width: auto;
+  
+   }
+   .traningtopimagecon {
+    background-image: url("../image/traningleasetwo.jpg");
+    width: auto;
+    height:150px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+
+   }
+   .trainingimagecontainer {
+   
+    height: 210px;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    
+   }
+    .nocontent {
+   
+    font-size: 15px;
+   
+  }
+  .requirementcontent .contenttitle {
+    font-size: 16px;
+  }
+  .contactusconetent .faqquestions div {
+    margin-left: 0px;
+  }
+  .faqquestions div {
+    margin-left: 20px;
+  }
+  .faqquestions i {
+    font-size: 14px;
+    color: #0088cc;
+   
+  }
+ .faqquestions p {
+    font-size: 12px;
+   
+  }
+  .faqcontent .contenttitle {
+    font-size: 16px;
+  }
+  .branchcontacttitle {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .footercontent {
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+   
+   
+ } 
+ .usefulLinks {
+  order: 2;
+ }
+ .footersocial {
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+  
+ 
+ }
+ .contactInfo p{
+  padding: 0px;
+}
+.usefulLinks h4,
+ .contactInfo h4{
+   margin-bottom: 15px;
+ }
+  .copyright {
+   
+   font-size: 8px;
+ 
+  
+ }
 }
 /* media query for tablet screen */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Tablet-specific styles */
+  .search {
+    display: none;
+  
+   }
+   .title {
+    margin-left: 0%;
+  
+   }
+   .slider {
+    width: 600px;  /* orginal photo width*/
+    height: 400px; /* Keep the height to 550px as desired */
+   background-size: cover;
+   margin-top: 5px;
+   
+  }
+  
+  .slide-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(600px * 12); /* 6 originals + 6 duplicates */
+   
+  }
+  
+  .slide {
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+  
+  }
+  .caption {
+  
+    font-size: 15px;
+   
+  }
+  .arrow {
+  
+    font-size: 25px;
+   
+  }
+  .traningtopimagecon {
+    background-image: url("../image/traningleasetwo.jpg");
+    width: auto;
+    height:400px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
 }
