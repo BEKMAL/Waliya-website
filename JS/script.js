@@ -712,6 +712,6 @@ announcementlink.addEventListener("click",function(e){
  function changeLanguage() {
   const selectedlanguage = document.getElementById("language-select").value;
     window.location.href=selectedlanguage
-    // window.location.pathname
+
 }
  //end of Language change
