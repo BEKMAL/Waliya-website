@@ -30,7 +30,7 @@
 
    color: white;
    padding-top: 2%;
-   margin-left: -9%;    /*to decrease justify distance b/n logo and title */
+   margin-left: -11%;    /*to decrease justify distance b/n logo and title */
 
  
  }
@@ -182,6 +182,36 @@
   
    margin-bottom: 0px;
 }
+/* list style for panel content */
+.panel li {
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 20px;
+  margin: 10px;
+  
+}
+        
+.panel li::before {
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  top: 4px; 
+  border: solid 8px  #0088cc;;
+  border-radius: 8px;
+}
+
+.panel li::after {
+  content: ""; 
+  position: absolute; 
+  left: 7px;
+  top: 7px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* end of list style for panel */
 .middlepanel  {
    text-align: justify;
    font-family: " Times new roman", sans-serif,ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
