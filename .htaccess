@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirect non-www to www and force HTTPS
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^waliyacapital\.com [NC]
+RewriteRule ^(.*)$ https://www.waliyacapital.com/$1 [L,R=301]
+
